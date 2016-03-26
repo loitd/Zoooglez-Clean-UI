@@ -1,0 +1,128 @@
+.navbar{
+	font-family: Calibri,"Bebas Neue","Segoe UI","Lucida Sans Unicode", "Lucida Grande";
+	font-size: 1.15em;
+	background-color: #745BDD;
+    border-color: #745BDD;
+    color: white;
+    min-height: 80px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	text-transform: uppercase;
+    line-height: 45px;
+    color: white;
+    transition: 0.3s ease;
+    border-bottom: 1px solid #745BDD;
+    padding: 15px 0px;
+    margin: 0px 10px;
+    outline: none;
+}
+
+#navbar .navleft>li.active>a, 
+#navbar .navleft>li>a:focus, 
+#navbar .navleft>li>a:hover{
+	background-color: transparent;
+    border-bottom: 4.5px solid #49C79C;
+    padding: 15px 0px;
+}
+
+.jumbotron{
+	/*background-color: #7A60E9;*/
+	background-image: url("../img/bg.jpg");
+	color: white;
+	min-height: 400px;
+	text-align: center;
+}
+
+.jumbotron .container h1{
+	padding: 60px 0px 25px 0px;
+	font-size: 2.8em;
+    font-family: Arial,"Bebas Neue","Segoe UI","Lucida Sans Unicode", "Lucida Grande";
+}
+
+.jumbotron form.form-inline .input-group{
+	margin-right: 10px;
+}
+
+.jumbotron form.form-inline input{
+	border: none;
+    border-radius: 15px !important;
+    padding: 20px 25px 20px 45px;
+    margin: 0 10px 0 0;
+    background: #745BDE;
+    color: white;
+    opacity: 0.8;
+    font-size: 1.5em;
+    width: 90px;
+}
+
+.jumbotron form.form-inline button.btn{
+	border-radius: 15px;
+    font-family: Arial, "Times New Roman";
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.form-control-feedback{
+	left: 5px;
+	top: 3px;
+	right: auto;
+	color: #3BD7A9;
+}
+
+.navbar-inverse .navbar-toggle{
+	border-color: white;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover{
+	background-color: white;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+	background-color: #3BD7A9;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border-color: transparent;
+}
+
+.navbar-header a.navbar-brand{
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	nav.navbar{
+		min-height: 50px;
+	}
+
+	.navbar-toggle{
+		float: left;
+		margin-left: 15px;
+	}
+
+	ul.navbar-right{
+		display: none;
+	}
+
+	.navbar-header a.navbar-brand{
+		display: block;
+		padding: 8px 15px;
+		float: right;
+	}
+
+	.navbar-header a.navbar-brand img{
+		height: 38px;
+	}
+
+	.jumbotron form.form-inline input{
+		width: 100%;
+	}
+
+	.has-feedback-left,
+	.jumbotron form.form-inline .input-group{
+		margin: 0 auto;
+	}
+}
